@@ -3,7 +3,7 @@ import './MoviesList.scss';
 import { MovieCard } from '../MovieCard';
 import { Props } from '../../react-app-env';
 
-export const MoviesList: React.FC<Props> = ({ movies = [] }) => (
+export const MoviesList: React.FC<Props> = ({ movies }) => (
   <div className="movies">
     {movies.map(movie => (
       <MovieCard
